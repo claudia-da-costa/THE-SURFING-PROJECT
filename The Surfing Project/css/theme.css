@@ -1,0 +1,110 @@
+/* ************************************************* */
+
+
+/* basics */
+
+* {
+    box-sizing: border-box !important;
+}
+
+
+/* styles configured */
+
+#hero {
+    background-position: center center, center center;
+    background-size: cover, cover;
+    background-repeat: repeat, no-repeat;
+}
+
+.navbar .navbar-nav .dropdown-menu {
+    background-color: #555;
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-item {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-item:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+
+/* .navbar .navbar-nav .dropdown-menu>.active>a,
+.navbar .navbar-nav .dropdown-menu>.active>a:hover,
+.navbar .navbar-nav .dropdown-menu>.active>a:focus {
+    color: #fefefe;
+    background-color: #999;
+} */
+
+
+/* Small devices (landscape phones, from 300px to 700px and up of 700px)*/
+
+@media (min-width: 300px) and (max-width: 700px) {
+    #hero .container {
+        padding: 0 !important;
+        padding-bottom: 90px !important;
+        width: 700px;
+    }
+    #hero .container .row h3 {
+        font-size: 25px !important;
+        font-weight: 400;
+        margin: 10px 0 !important;
+    }
+    #hero .container .row p {
+        margin: 10px 0 !important;
+    }
+    #hero .container .row .btn-section {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    #hero .container .row .btn {
+        font-size: 9px !important;
+    }
+    h1 {
+        font-size: 30px !important;
+    }
+    .footer {
+        font-size: 10px !important;
+        color: dimgray;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+    #hero .container {
+        padding-bottom: 100px !important;
+    }
+    #hero .container .row h3 {
+        font-size: 30px !important;
+        margin: 20px 0 !important;
+    }
+    #hero .container .row p {
+        margin: 20px 0 !important;
+    }
+    #hero .container .row .btn-section {
+        padding: 0 10px !important;
+    }
+    #hero .container .row .btn {
+        font-size: 12px !important;
+    }
+}
+
+@media (min-width: 700px) {
+    #hero .container {
+        padding: 0 !important;
+        padding-bottom: 200px !important;
+        margin: 20px auto !important;
+        width: 700px;
+    }
+    #hero .container .row h3 {
+        margin: 20px 0 !important;
+    }
+    #hero .container .row p {
+        font-weight: 400;
+        margin: 20px 0 !important;
+    }
+    .footer {
+        font-size: 20px !important;
+        color: dimgray;
+    }
+}
